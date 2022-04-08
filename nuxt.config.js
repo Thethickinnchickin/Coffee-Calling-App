@@ -60,7 +60,7 @@ export default {
   target: 'server',
 
   server: {
-    port: 8080
+    port: process.env.HOST
   },
 
   
