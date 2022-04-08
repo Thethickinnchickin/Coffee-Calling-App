@@ -77,6 +77,7 @@ app.listen(process.env.PORT, (err) => {
     if (err) {
         console.log(err)
     } else {
+        console.log(process.env.HOST)
         console.log(`Listening on port ${process.env.PORT}`)
     }
 })
