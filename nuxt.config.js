@@ -95,7 +95,7 @@ export default {
 
 
   proxy: {
-    "/api": 'https://coffee-e-commerce.herokuapp.com/'
+    "/api": {target: 'https://coffee-e-commerce.herokuapp.com/'}
   },
 
   /*
