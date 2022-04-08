@@ -59,7 +59,9 @@ export default {
 
   target: 'server',
 
-
+  server: {
+    port: URL
+  },
 
   
 
