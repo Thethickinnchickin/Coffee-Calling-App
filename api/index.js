@@ -48,7 +48,7 @@ const AdminProductsRoutes = require('./routes/admin/adminProducts');
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-app.use('/api', createProxyMiddleware({ target: process.env.PORT, changeOrigin: true }))
+app.use('/api', createProxyMiddleware({ target: process.env.HOST, changeOrigin: true }))
 
 app.use('/api', AdminAuthRoutes);
 app.use('/api', AdminProductsRoutes);
