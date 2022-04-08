@@ -100,9 +100,6 @@ export default {
   serverMiddleware: 
   ['~/api/index.js'],
 
-  server: {
-    port: 8000,
-  },
 
   router: {
     base: '/'
