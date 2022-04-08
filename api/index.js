@@ -1,5 +1,5 @@
 // api/index.js
-
+const { createProxyMiddleware } = require('http-proxy-middleware');
 const express = require('express')
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -46,7 +46,7 @@ const FollowingRoutes = require('./routes/followers');
 const AdminAuthRoutes = require('./routes/admin/adminAuth');
 const AdminProductsRoutes = require('./routes/admin/adminProducts');
 
-const { createProxyMiddleware } = require('http-proxy-middleware');
+
 
 app.use('/api', createProxyMiddleware({ target: process.env.HOST, changeOrigin: true }))
 
