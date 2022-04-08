@@ -55,7 +55,7 @@ export default {
     baseURL: URL,
   },
 
-  target: 'static',
+  target: 'server',
 
 
 
