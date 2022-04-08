@@ -57,7 +57,7 @@ export default {
 
 
 
-  target: 'static',
+  target: 'server',
 
   server: {
     port: 8080
