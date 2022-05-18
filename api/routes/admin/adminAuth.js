@@ -67,7 +67,7 @@ router.post('/auth/admin/login', async (req, res) => {
 
 })
 
-router.get('/admin', verifyAdminToken, async(req, res) => {
+router.get('/auth/admin', verifyAdminToken, async(req, res) => {
     try {
         let foundAdmin = await Admin.findById(req.decoded._id);
         if(foundAdmin) {
