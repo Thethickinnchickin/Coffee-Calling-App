@@ -1,0 +1,49 @@
+{
+    "name": "client",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "nuxt",
+      "build": "nuxt build",
+      "start": "nuxt start",
+      "heroku-postbuild": "npm run build",
+      "generate": "nuxt generate"
+    },
+    "dependencies": {
+      "@nuxtjs/auth": "^4.9.1",
+      "@nuxtjs/axios": "^5.13.6",
+      "@nuxtjs/pwa": "^3.3.5",
+      "aws-sdk": "^2.1107.0",
+      "bcrypt-nodejs": "^0.0.3",
+      "body-parser": "^1.20.0",
+      "bootstrap-vue": "^2.21.2",
+      "core-js": "^3.19.3",
+      "cors": "^2.8.5",
+      "express": "^4.17.3",
+      "intl": "^1.2.5",
+      "jsonwebtoken": "^8.5.1",
+      "moment": "^2.29.2",
+      "mongoose": "^6.2.10",
+      "mongoose-algolia": "^1.10.1",
+      "mongoose-deep-populate": "^3.2.0",
+      "multer": "^1.4.4",
+      "multer-s3": "^2.10.0",
+      "nanoid": "^2.1.11",
+      "nuxt": "^2.15.8",
+      "stripe": "^8.215.0",
+      "vue": "^2.6.14",
+      "vue-server-renderer": "^2.6.14",
+      "vue-star-rating": "^1.6.2",
+      "vue-template-compiler": "^2.6.14",
+      "webpack": "^4.46.0"
+    },
+    "engines": {
+      "node": "v16.13.0",
+      "npm": "8.1.0"
+    },
+    "devDependencies": {
+      "http-proxy-middleware": "^2.0.4",
+      "webpack-cli": "^4.9.2",
+      "webpack-dev-server": "^4.8.1"
+    }
+  }
