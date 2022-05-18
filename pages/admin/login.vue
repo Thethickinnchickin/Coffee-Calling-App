@@ -80,7 +80,7 @@ export default {
     auth: "guest",
     data() {
         return {
-            email: '',
+            name: '',
             password: ''                
         }
 
