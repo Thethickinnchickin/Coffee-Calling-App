@@ -10,7 +10,7 @@ const client = algoliaSearch(
 //mongoose algolia --> sync document to your algolia database
 //algoliasearch ==> search data in your algolia database
 
-const index = client.initIndex('E-COMMERCE-APP');
+const index = client.initIndex(process.env.ALGOLIA_INDEX);
 
 router.post('/search', async (req, res) => {
     try {
