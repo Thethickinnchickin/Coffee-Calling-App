@@ -87,7 +87,7 @@ export default {
             url: '/api/auth/admin/login',
             method: 'post',
             propertyName: 'token',
-            rewuired: true
+            required: true
           },
           user: {
             url: '/api/auth/admin',

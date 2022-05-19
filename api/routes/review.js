@@ -7,7 +7,7 @@ const verifyToken = require('../middlewears/verify-token')
 
 
 //Route that post review to product from user
-router.post("/reviews/:productID", verifyToken, upload.single("photo"), async (req, res) => {
+router.post("/reviews/:productID", verifyToken, upload.single('photo'), async (req, res) => {
     try {
         let review = new Review({
             headline: req.body.headline,
