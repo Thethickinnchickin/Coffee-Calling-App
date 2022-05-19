@@ -2,7 +2,7 @@
     <main>
         <div class="ListingPage">
         <div class="container-fluid">
-        <FeaturedProduct :topProduct="topProduct.product"/>
+        <!-- <FeaturedProduct :topProduct="topProduct.product"/> -->
           <div class="row">
 
             <!--- Main Content ---> 
