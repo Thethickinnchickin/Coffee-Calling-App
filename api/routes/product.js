@@ -2,7 +2,9 @@ const router = require('express').Router();
 
 const Product = require('../models/product');
 
-const upload = require('../middlewears/upload-photo');
+const { storage, cloudinary } = require('./middlewears/upload-photo');
+const multer = require('multer');
+const upload = multer({storage});
 
 const User = require('../models/user');
 const verifyToken = require('../middlewears/verify-token');

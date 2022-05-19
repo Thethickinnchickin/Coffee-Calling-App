@@ -1,7 +1,10 @@
 const router = require('express').Router();
 const Owner = require('../models/owner');
 
-const upload = require('../middlewears/upload-photo');
+//Setting cloudinary storage
+const { storage, cloudinary } = require('./middlewears/upload-photo');
+const multer = require('multer');
+const upload = multer({storage});
 
 //POST request - creating a new owner into database
 router.post('/owners', upload.single('photo'), async (req, res) => {
