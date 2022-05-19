@@ -2,7 +2,7 @@ const router = require('express').Router();
 const Owner = require('../models/owner');
 
 //Setting cloudinary storage
-const { storage, cloudinary } = require('./middlewears/upload-photo');
+const { storage, cloudinary } = require('../middlewears/upload-photo');
 const multer = require('multer');
 const upload = multer({storage});
 
