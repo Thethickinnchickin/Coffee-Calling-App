@@ -15,7 +15,7 @@ router.post("/reviews/:productID", verifyToken, upload.single('photo'), async (r
             headline: req.body.headline,
             body: req.body.body,
             rating: req.body.rating,
-            photo: req.file.location,
+            photo: req.file.path,
             productID: req.params.productID,
             user: req.decoded._id
         })
