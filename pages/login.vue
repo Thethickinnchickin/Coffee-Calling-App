@@ -13,7 +13,7 @@
                     <form @submit.prevent="userLogin" class="mt-4">
                         <div class="a-box a-spacing-extra-large">
                             <div class="a-box-inner">
-                                <h1 class="a-spacing-small">Create Account</h1>
+                                <h1 class="a-spacing-small">Login</h1>
 
                                 <!--- Your Email --->
                                 <div class="a-row a-spacing-base">
