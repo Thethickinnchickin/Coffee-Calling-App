@@ -51,7 +51,7 @@ router.post('/products', upload.single('photo'), verifyAdminToken, async (req, r
         let product = new Product();
         product.title = req.body.title;
         product.description = req.body.description;
-        product.photo = req.file.location;
+        product.photo = req.file.path;
         product.price = req.body.price;
         product.stockQuantity =  req.body.stockQuantity;
         product.owner = req.body.ownerID;
