@@ -138,6 +138,8 @@ export default {
     
       let products = await $axios.$post('/api/search', {title: query.title});
       let topProduct = await $axios.$get('/api/top/product');
+      console.log(products)
+      console.log(topProduct);
 
       return {
         products: products,
