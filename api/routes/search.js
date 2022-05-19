@@ -3,7 +3,7 @@ const router = require('express').Router();
 const algoliaSearch = require('algoliasearch');
 
 const client = algoliaSearch(
-    process.env.ALGOLIA_APP_ID,
+    'BWJUMGS38I',
     process.env.ADMIN_SECRET
 )
 
@@ -15,7 +15,7 @@ const index = client.initIndex('E-COMMERCE-APP');
 router.post('/search', async (req, res) => {
     try {
         let results = await index.search(req.body.title);
-        console.info(results);
+
         for(let i=0; i < results.hits.length; i++) {
             let averageRating = getAverageRating(results.hits[i].rating);
             results.hits[i].averageRating = averageRating;          
