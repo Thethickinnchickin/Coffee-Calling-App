@@ -3,7 +3,7 @@ const router = require('express').Router();
 const algoliaSearch = require('algoliasearch');
 
 const client = algoliaSearch(
-    'BWJUMGS38I',
+    process.env.ALGOLIA_APP_ID,
     process.env.ADMIN_SECRET
 )
 
